@@ -1,43 +1,8 @@
-<div align="center">
-  <h1><code>tf2-decap-unlimit</code></h1>
-  <p>
-    <strong>Short Description</strong>
-  </p>
-  <p style="margin-bottom: 0.5ex;">
-    <img
-        src="https://img.shields.io/github/downloads/kingofings/tf2-decap-unlimit/total"
-    />
-    <img
-        src="https://img.shields.io/github/last-commit/kingofings/tf2-decap-unlimit"
-    />
-    <img
-        src="https://img.shields.io/github/issues/kingofings/tf2-decap-unlimit"
-    />
-    <img
-        src="https://img.shields.io/github/issues-closed/kingofings/tf2-decap-unlimit"
-    />
-    <img
-        src="https://img.shields.io/github/repo-size/kingofings/tf2-decap-unlimit"
-    />
-    <img
-        src="https://img.shields.io/github/workflow/status/kingofings/tf2-decap-unlimit/Compile%20and%20release"
-    />
-  </p>
-</div>
+# tf2-decap-unlocker
+Allows to modify the eyelanders decap behaviour via convars
 
+# Dependencies
+[TF2Attributes]([https://github.com/nosoop/SMExt-SourceScramble](https://github.com/FlaminSarge/tf2attributes/releases)) by [FlaminSarge]([https://github.com/nosoop](https://github.com/FlaminSarge))
 
-## Requirements ##
-- Sourcemod and Metamod
-
-
-## Installation ##
-1. Grab the latest release from the release page and unzip it in your sourcemod folder.
-2. Restart the server or type `sm plugins load tf2-decap-unlimit` in the console to load the plugin.
-3. The config file will be automatically generated in cfg/sourcemod/
-
-## Configuration ##
-- You can modify the phrases in addons/sourcemod/translations/tf2-decap-unlimit.phrases.txt.
-- Once the plugin has been loaded, you can modify the cvars in cfg/sourcemod/tf2-decap-unlimit.cfg.
-
-
-## Usage ##
+# Installation
+Drop the plugin .smx into the plugins folder and the tf2.decap_unlocker.txt into the gamedata folder
