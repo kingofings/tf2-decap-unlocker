@@ -10,7 +10,7 @@ public Plugin myinfo =
 	author = "kingo",
 	description = "Unlocks the eyelanders decapitation buff limits",
 	version = "1.1.0",
-	url = "https://github.com/kingofings/tf2-decap-unlimit"
+	url = "https://github.com/kingofings/tf2-decap-unlocker"
 };
 
 Handle g_CTFSword_GetSwordSpeedMod;
