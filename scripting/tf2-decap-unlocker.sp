@@ -9,7 +9,7 @@ public Plugin myinfo =
 	name = "TF2 Decap Unlocker",
 	author = "kingo",
 	description = "Unlocks the eyelanders decapitation buff limits",
-	version = "1.1.0",
+	version = "1.1.1",
 	url = "https://github.com/kingofings/tf2-decap-unlimit"
 };
 
@@ -68,12 +68,19 @@ public void OnEntityCreated(int entity, const char[] className)
 
 MRESReturn CTFSword_GetSwordSpeedModPre(int weapon, DHookReturn ret)
 {
-	DHookSetReturn(ret, 0.0);
-
 	int owner = GetEntPropEnt(weapon, Prop_Send, "m_hOwnerEntity");
-	if (!owner)return MRES_Supercede;
+	if (!owner)
+	{
+		DHookSetReturn(ret, 0.0);
+		return MRES_Supercede;
+	}
 
-	if (!CTFDecapitationMeleeWeaponBase_CanDecapitate(weapon))return MRES_Supercede;
+	if (!CTFDecapitationMeleeWeaponBase_CanDecapitate(weapon))
+	{
+		DHookSetReturn(ret, 1.0);
+		return MRES_Supercede;
+	
+	}
 
 	int decapCount = min(sm_decap_speed_limit.IntValue, GetEntProp(owner, Prop_Send, "m_iDecapitations"));
 
