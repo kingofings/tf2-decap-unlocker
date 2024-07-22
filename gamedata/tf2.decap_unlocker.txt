@@ -1,0 +1,70 @@
+"Games"
+{
+    "tf"
+    {
+        "Offsets"
+        {
+            "CTFSword::GetSwordSpeedMod()"
+            {
+                "windows"   "484"
+                "linux"     "492"
+            }
+
+            "CTFSword::GetSwordHealthMod()"
+            {
+                "windows"   "485"
+                "linux"     "493"
+            }
+
+            "CTFDecapitationMeleeWeaponBase::CanDecapitate()"
+            {
+                "windows"   "481"
+                "linux"     "493"
+            }
+        }
+
+        "Signatures"
+        {
+            "CTFWearableDemoShield::CalculateChargeDamage()"
+            {
+                // x-ref to unique string charge_impact_damage
+                "windows"   "\x53\x8B\xDC\x83\xEC\x08\x83\xE4\xF0\x83\xC4\x04\x55\x8B\x6B\x04\x89\x6C\x24\x04\x8B\xEC\x83\xEC\x2C\xF3\x0F\x10\x43\x08"
+                "linux"     "@_ZN21CTFWearableDemoShield21CalculateChargeDamageEf" 
+            }
+        }
+
+        "Functions"
+        {
+            "CTFSword::GetSwordSpeedMod()"
+			{
+				"offset"		"CTFSword::GetSwordSpeedMod()"
+				"hooktype"		"entity"
+				"return"		"float"
+				"this"			"entity"
+			}
+
+            "CTFSword::GetSwordHealthMod()"
+			{
+				"offset"		"CTFSword::GetSwordHealthMod()"
+				"hooktype"		"entity"
+				"return"		"int"
+				"this"			"entity"
+			}
+
+            "CTFWearableDemoShield::CalculateChargeDamage()"
+            {
+				"signature"	"CTFWearableDemoShield::CalculateChargeDamage()"
+				"callconv"	"thiscall"
+				"return"	"float"
+				"this"		"entity"
+				"arguments"
+				{
+					"currentChargeMeter"
+					{
+						"type"	"float"
+					}
+				}
+			}
+        }
+    }
+}
