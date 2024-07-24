@@ -79,7 +79,6 @@ MRESReturn CTFSword_GetSwordSpeedModPre(int weapon, DHookReturn ret)
 	{
 		DHookSetReturn(ret, 1.0);
 		return MRES_Supercede;
-	
 	}
 
 	int decapCount = min(sm_decap_speed_limit.IntValue, GetEntProp(owner, Prop_Send, "m_iDecapitations"));
