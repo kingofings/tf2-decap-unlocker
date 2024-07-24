@@ -19,7 +19,7 @@
             "CTFDecapitationMeleeWeaponBase::CanDecapitate()"
             {
                 "windows"   "481"
-                "linux"     "493"
+                "linux"     "488"
             }
         }
 
