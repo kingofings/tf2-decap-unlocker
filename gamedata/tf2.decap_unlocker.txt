@@ -6,20 +6,20 @@
         {
             "CTFSword::GetSwordSpeedMod()"
             {
-                "windows"   "484"
-                "linux"     "492"
+                "windows"   "486"
+                "linux"     "494"
             }
 
             "CTFSword::GetSwordHealthMod()"
             {
-                "windows"   "485"
-                "linux"     "493"
+                "windows"   "487"
+                "linux"     "495"
             }
 
             "CTFDecapitationMeleeWeaponBase::CanDecapitate()"
             {
-                "windows"   "481"
-                "linux"     "488"
+                "windows"   "483"
+                "linux"     "490"
             }
         }
 
