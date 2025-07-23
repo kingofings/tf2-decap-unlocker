@@ -142,6 +142,7 @@ float ClampFloat(float value, float min, float max)
 	return value;
 }
 
+// See https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/public/mathlib/mathlib.h#L619-L627
 float RemapValClamped( float val, float A, float B, float C, float D)
 {
 	if ( A == B )return val >= B ? D : C;
