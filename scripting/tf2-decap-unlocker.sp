@@ -143,6 +143,7 @@ float ClampFloat(float value, float min, float max)
 }
 
 // Function below is © Valve Corporation
+// Licensed under the Source 1 SDK License – see VALVE_LICENSE.txt
 float RemapValClamped( float val, float A, float B, float C, float D)
 {
 	if ( A == B )return val >= B ? D : C;
